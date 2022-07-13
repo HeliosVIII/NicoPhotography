@@ -1,0 +1,91 @@
+//Animation CONTACT page
+@keyframes aniContact
+  from
+    opacity: 0
+    transform: translateX(+4rem)
+  to
+    opacity: 1
+    transform: translateX(0rem)
+//Animation END
+//Classes CONTACT page
+.contact-main
+  background-color: $color__blue-teal
+  .contact__media
+    display: flex
+    flex-direction: row
+    justify-content: center
+    gap: 1rem
+    padding: 1rem 0
+  .contact__title
+    font-family: $titles
+    font-size: $font__size--l
+    color: $color__white2
+    text-align: left
+    animation-name: aniContact
+    animation-delay: .3s
+    animation-duration: .7s
+    animation-iteration-count: 1
+    animation-timing-function: ease-in
+    animation-fill-mode: forwards
+    opacity: 0
+  .contact-1
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 30rem
+    &__text
+      color: $color__white2
+      font-family: $text
+      font-size: $font__size--m
+      a
+        font-weight: 600
+        &:hover
+          text-decoration: underline
+      &1
+        animation-name: aniContact
+        animation-delay: .3s
+        animation-duration: .7s
+        animation-iteration-count: 1
+        animation-timing-function: ease-in
+        animation-fill-mode: forwards
+        opacity: 0
+      &2
+        animation-name: aniContact
+        animation-delay: 1s
+        animation-duration: .9s
+        animation-iteration-count: 1
+        animation-timing-function: ease-in
+        animation-fill-mode: forwards
+        opacity: 0
+  form
+    display: flex
+    flex-direction: column
+    gap: 2rem
+    padding: 2rem 0
+    .form__button-align
+      display: flex
+      justify-content: flex-end
+      .button
+        color: $color__blue-teal
+        background-color: $color__white2
+        width: 7rem
+        padding: .2rem 1.5rem
+        font-weight: bold
+    label
+      color: $color__white2
+      font-family: $text
+      font-size: $font__size--r
+      display: flex
+      flex-direction: column
+      justify-content: center
+      input, textarea
+        background-color: $color__white2
+        border-radius: 4px
+      .form-box
+        max-width: 25rem
+    .checkbox
+      display: flex
+      flex-direction: row
+      gap: .5rem
+      &--link
+        text-decoration: 1px underline

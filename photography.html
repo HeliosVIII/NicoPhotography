@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--TITLE-->
+    <title>Photography</title>
+    <!--TITLE END-->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Nicolas Burgeff">
+    <meta name="keywords" content="portfolio, photography, photographer, street photography, portraits, travel photography, brussels, projects">
+    <meta name="description" content="Welcome to NICO photography, a portfolio of street photography, nature photography and other genres of photography from Nicolas Burgeff">
+    <!-- Open Graph y Twitter card: Declara como se mostrará la previa del enlace si es compartida por Facebook o alguna otra red social -->
+    <meta property="og:image" content="img/logo/Logo_NICO.webp">
+    <meta property="og:title" content="NICO photography">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heliosviii.github.io/nicophotography/">
+    <meta name="twitter:title" content="NICO photography">
+    <meta name="twitter:image" content="img/logo/Logo_NICO.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Welcome to NICO photography, a portfolio of street photography, nature photography and other genres of photography from Nicolas Burgeff">
+    <!-- Open Graph Imagen completa (Opcional) -->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="NICO photography Logo">
+    <!-- Normalizer and symbiosis-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!--Alpine and AOS animation Scripts-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Animation Scripts END -->
+    <!--CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 665px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 666px)">
+    <!--CSS END-->
+</head>
+<body>
+    <header class="header" x-data="{ open: false }">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/Logo_NICO.webp" alt="NICO Website Logo" class="logo__img">
+                </a>
+            </div>
+            <button class="button header__button-open" @click="open = true">
+                <img src="img/icons/menu.svg" alt="Open Menu">
+            </button>
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <button class="button header__button-close" @click="open = false">
+                    <img class="header__button-close-img" src="img/icons/close.svg" alt="Close Menu" >
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item nav__home">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero animate__animated animate__fadeIn animate__slower">
+                    <h1 class="hero__title">
+                        Photography
+                    </h1>
+                    <p class="hero__text">
+                        Welcome to my photography, my creative universe, a passion that was a hobby born off travels and off the act of making memories, which then grew into a full-blown and dedicated passion to the art.  Photography was for me the creative an artistic outlet I searched for a long time, and as I got into it, I was drawn into the plurality of its genres, captivated by the uniqueness every genre and its creative possibilities.  Here are presented selections of works from some of the types of photography I practice, and basically what I enjoy to shoot.
+                    </p>
+                    <p class="hero__quote">
+                        &quot;Shoot whatever makes you happy. keep it that simple!&quot; - Sean Tucker
+                    </p>
+            </section>
+            <section class="categories">
+                <div class="categories__item categories__item1" data-aos="fade-up" data-aos-duration="3000">
+                    <a href="street.html" class="categories__link">
+                        <h2 class="categories--title">
+                            Street
+                        </h2>
+                    </a>
+                </div>
+                <div class="categories__item categories__item2" data-aos="fade-up" data-aos-duration="3000">
+                    <a href="portraits.html" class="categories__link">
+                        <h2 class="categories--title">
+                            Portraits
+                        </h2>
+                    </a>
+                </div>
+                <div class="categories__item categories__item3" data-aos="fade-up" data-aos-duration="3000">
+                    <a href="nature.html" class="categories__link">
+                        <h2 class="categories--title">
+                            Nature
+                        </h2>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                All rights reserved © 2022 Nicolas Burgeff
+            </p>
+            <a href="privacy-policy.html" class="footer__link">
+                <p class="footer__text">
+                    Privacy Policy
+                </p>
+            </a>
+            <a href="cookies-policy.html" class="footer__link">
+                <p class="footer__text">
+                    Cookies Policy
+                </p>
+            </a>
+            <a href="legal-advice.html" class="footer__link">
+                <p class="footer__text">
+                    Legal Advice
+                </p>
+            </a>
+        </div>
+    </footer>
+    <!--fade up script-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+//Animations COOKIES
+@keyframes aniCookie
+  from
+    transform: translateY(33vh)
+    opacity: 0
+  to
+    transform: translateY(0)
+    opacity: 1
+//Animations end
+
+//Classes COOKIES
+.cookies
+  position: fixed
+  bottom: 0
+  z-index: 200
+  opacity: 0
+  animation-name: aniCookie
+  animation-iteration-count: 1
+  animation-timing-function: ease-in
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  &__box
+    position: relative
+    width: 100vw
+    background-color: $color__white2
+    padding: 1rem 0
+    border: 1px solid $color__red-orange
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    gap: 1.5rem
+    &__hide
+      display: none
+  &__text
+    font-family: $text
+    font-size: $font__size--r
+    color: $color__red-orange
+    text-align: center
+  &__link
+    text-decoration: underline
+  &__button
+    background-color: $color__red-orange
+    color: $color__white2
+    padding: .2rem 1rem .3rem 1rem
+    border-radius: 5rem

@@ -1,0 +1,40 @@
+//HEADER
+.header
+  background-color: $color__white
+  color: $color__red-orange
+  border-bottom: 2px  solid $color__red-orange
+  .container
+    display: flex
+    justify-content: left
+    align-items: center
+    padding: 1rem
+    max-width: $container__header
+  .logo
+    margin-left: 2rem
+    width: 10rem
+    &__img
+      width: 12rem
+      overflow: hidden
+  &__button-close, &__button-open
+    display: none
+  .nav
+    position: fixed
+    top: 3rem
+    right: 3rem
+    z-index: 800
+    &__list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      list-style-type: none
+      padding: 0
+    &__home
+      display: none
+    &__link
+      display: block
+      padding: 1rem
+      font-family: $titles
+      font-size: $font__size--m
+      font-weight: 700
+      &:hover
+        filter: brightness(0.5)

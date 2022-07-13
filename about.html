@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--TITLE-->
+    <title>About Me</title>
+    <!--TITLE END-->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Nicolas Burgeff">
+    <meta name="keywords" content="portfolio, photography, photographer, street photography, portraits, travel photography, brussels, projects">
+    <meta name="description" content="Welcome to NICO photography, a portfolio of street photography, nature photography and other genres of photography from Nicolas Burgeff">
+    <!-- Open Graph y Twitter card: Declara como se mostrará la previa del enlace si es compartida por Facebook o alguna otra red social -->
+    <meta property="og:image" content="img/logo/Logo_NICO.webp">
+    <meta property="og:title" content="NICO photography">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heliosviii.github.io/nicophotography/">
+    <meta name="twitter:title" content="NICO photography">
+    <meta name="twitter:image" content="img/logo/Logo_NICO.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Welcome to NICO photography, a portfolio of street photography, nature photography and other genres of photography from Nicolas Burgeff">
+    <!-- Open Graph Imagen completa (Opcional) -->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="NICO photography Logo">
+    <!-- Normalizer and symbiosis-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!--Alpine and AOS animation Scripts-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Animation Scripts END -->
+    <!--CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 665px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 666px)">
+    <!--CSS END-->
+</head>
+<body>
+    <header class="header" x-data="{ open: false }">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/Logo_NICO.webp" alt="NICO Website Logo" class="logo__img">
+                </a>
+            </div>
+            <button class="button header__button-open" @click="open = true">
+                <img src="img/icons/menu.svg" alt="Open Menu">
+            </button>
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <button class="button header__button-close" @click="open = false">
+                    <img class="header__button-close-img" src="img/icons/close.svg" alt="Close Menu" >
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item nav__home">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Landing ABOUT-->
+        <section class="landing">
+            <div class="container">
+                <p class="landing__text" data-aos="fade-down"
+                   data-aos-easing="linear"
+                   data-aos-duration="1500">
+                   Passionated photographer, always on pursuit of new perspectives, picturesque scenes and new themes to capture and experiment with.
+                </p>
+            </div>
+        </section>
+        <!--me Brand VALUES-->
+        <section class="me">
+            <div class="container">
+                <p class="me__text" data-aos="fade-left"
+                   data-aos-easing="linear"
+                   data-aos-duration="3000">
+                    Bold, Fun, Creative and Honest - That's my Philosophy
+                </p>
+            </div>
+        </section>
+        <!--ABOUT ME intro-->
+        <section class="intro" >
+            <div class="container" data-aos="fade-up" data-aos-duration="3000">
+                <div class="intro__wrapper">
+                    <h1 class="intro__title">About Me</h1>
+                    <p class="intro__text">
+                        I'm Nicolas Burgeff, a German Mexican photographer based in Brussels, the city where it al began.  At first, like many others, I enjoyed photography but, I only practiced it when travelling to capture memories of family, people and places.  Until, one day, I felt that it could be more for me, that I had to break the habit, and I did, by going outside my comfort zone and exploring street photography.
+                    </p>
+                    <p class="intro__text">
+                        Art had always been a main interest of mine -it led me to do a Bachelor in Art History and a Master&apos;s degree in Cultural Management- and as I started taking my camera with me on every occasion it became quickly a passion.
+                    </p>
+                    <p class="intro__text">
+                        Soon, I wanted to try myself at every genre and discover all the ways I could create.  A curious and eager passion to explore the expressivity and intimacy of portraits, the simplicity and majesty of nature, to capture events, products, life...
+                    </p>
+                    <p class="intro__text">
+                        A quest in continuous evolution, growth, and creativity, in which I'm always looking for the next project, the next theme to explore.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--CONTACT-->
+        <section class="contact">
+            <div class="container">
+                <a href="contact.html" class="contact__link">
+                    <h1 class="contact__title">Contact</h1>
+                </a>
+                <div class="contact__media">
+                    <a class="contact__link" href="https://www.instagram.com/nico.burgeff/" target="_blank">
+                        <img src="img/icons/instagram.svg" alt="Instagram" class="contact__icon">
+                    </a>
+                    <a class="contact__link" href="https://be.linkedin.com/in/nicolas-burgeff-57389418b?original_referer=https%3A%2F%2Fwww.google.com%2F" target="_blank">
+                        <img src="img/icons/linkedin.svg" alt="Linkedin" class="contact__icon">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                All rights reserved © 2022 Nicolas Burgeff
+            </p>
+            <a href="privacy-policy.html" class="footer__link">
+                <p class="footer__text">
+                    Privacy Policy
+                </p>
+            </a>
+            <a href="cookies-policy.html" class="footer__link">
+                <p class="footer__text">
+                    Cookies Policy
+                </p>
+            </a>
+            <a href="legal-advice.html" class="footer__link">
+                <p class="footer__text">
+                    Legal Advice
+                </p>
+            </a>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

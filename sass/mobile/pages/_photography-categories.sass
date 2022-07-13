@@ -1,0 +1,22 @@
+//Classes of all the Photo Sections
+.grid
+  display: grid
+  grid-template-columns: 1fr
+  padding: 2rem
+  background-color: $color__white2
+  gap: 1rem
+  &__col
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 1rem
+    &1
+      grid-row: 1 / 2
+    &2
+      grid-row: 2 / 3
+    &3
+      grid-row: 3 / 4
+  &__img
+    width: 100%
+    box-shadow:  0 5px  3px black

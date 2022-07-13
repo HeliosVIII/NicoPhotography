@@ -1,0 +1,59 @@
+//HEADER
+.header
+  background-color: $color__white
+  color: $color__red-orange
+  border-bottom: 2px  solid $color__red-orange
+  .container
+    display: flex
+    justify-content: left
+    align-items: center
+  &__button-open
+    position: fixed
+    top: 3rem
+    right: 2rem
+    z-index: 800
+  &__button-close
+    grid-column: 3 / 4
+    grid-row: 1 / 2
+    width: 2rem
+    padding: .2rem
+    &-img
+      width: 3rem
+  .logo
+    width: 10rem
+  .nav
+    display: grid
+    $sizeColumn:4rem
+    grid-template-columns: $sizeColumn 1fr $sizeColumn
+    grid-template-rows: $sizeColumn 1fr $sizeColumn
+    position: fixed
+    z-index: 999
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #e84728
+    color: #f3f3f3
+    transition: .5s
+    //transform para que se oculte fuera de vista, aqui  menos la medida del viewport
+    transform: translateX(-100vw)
+    //y esta clase para hacerlo visible
+    &__show
+      transform: translateX(0)
+      opacity: 1
+    &__list
+      grid-column: 2 / 3
+      grid-row:  2 / 3
+      list-style-type: none
+      padding: 0
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      align-items: center
+    &__link
+      display: block
+      font-family: $titles
+      font-size: $font__size--m
+      padding: 1.5rem
+      &:hover
+        text-decoration: underline

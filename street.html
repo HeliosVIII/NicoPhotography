@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--TITLE-->
+    <title>Street</title>
+    <!--TITLE END-->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Nicolas Burgeff">
+    <meta name="keywords" content="portfolio, photography, photographer, street photography, portraits, travel photography, brussels, projects">
+    <meta name="description" content="Welcome to NICO photography, a portfolio of street photography, nature photography and other genres of photography from Nicolas Burgeff">
+    <!-- Open Graph y Twitter card: Declara como se mostrará la previa del enlace si es compartida por Facebook o alguna otra red social -->
+    <meta property="og:image" content="img/logo/Logo_NICO.webp">
+    <meta property="og:title" content="NICO photography">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://heliosviii.github.io/nicophotography/">
+    <meta name="twitter:title" content="NICO photography">
+    <meta name="twitter:image" content="img/logo/Logo_NICO.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:description" content="Welcome to NICO photography, a portfolio of street photography, nature photography and other genres of photography from Nicolas Burgeff">
+    <!-- Open Graph Imagen completa (Opcional) -->
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="NICO photography Logo">
+    <!-- Normalizer and symbiosis-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/sapps-studio/symbiosis-css/symbiosis.min.css">
+    <!--Alpine and AOS animation Scripts-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--Animation Scripts END -->
+    <!--CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 665px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 666px)">
+    <!--CSS END-->
+</head> 
+<body>
+    <header class="header" x-data="{ open: false }">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo/Logo_NICO.webp" alt="NICO Website Logo" class="logo__img">
+                </a>
+            </div>
+            <button class="button header__button-open" @click="open = true">
+                <img src="img/icons/menu.svg" alt="Open Menu">
+            </button>
+            <nav class="nav" x-bind:class="open ? 'nav__show': ''">
+                <button class="button header__button-close" @click="open = false">
+                    <img class="header__button-close-img" src="img/icons/close.svg" alt="Close Menu" >
+                </button>
+                <ul class="nav__list">
+                    <li class="nav__item nav__home">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="photography.html" class="nav__link">Photography</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--HERO for photo sections-->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Street Photography</h1>
+                <p class="hero__text">Street is one of my favorites genres, and the one through which I got fully into photography.  It is an unpredictable genre, with an environment that is always moving and ever-changing, and which can be conceived in many ways.  Ranging from a documentary approach to completely abstract ones, a genre where creativity knows no bounds.</p>
+            </div>
+        </section>
+        <!--Photogrid, GRID into FLEX columns to facilitate new additions-->
+        <section class="grid">
+            <div class="grid__col grid__col1">
+                <img src="img/photos/street/street_museum-berlin.jpg" alt="Museum of German history Berlin " class="grid__img">
+                <img src="img/photos/street/street_la-seine.jpg" alt="Girls feeding seagulls at la Seine, Paris" class="grid__img">
+                <img src="img/photos/street/street_louvre.jpg" alt="Louvre&apos;s Pyramid photo" class="grid__img">
+            </div>
+            <div class="grid__col grid__col2">
+                <img src="img/photos/street/street-place-albertine.jpg" alt="Long-exposure photo in the center of brussels" class="grid__img">
+                <img src="img/photos/street/street_window-cook.jpg" alt="photograph of a cook through a window" class="grid__img">
+                <img src="img/photos/street/street_bonn-silhouettes.jpg" alt="Silhouettes on a stairway in a museum in Bonn" class="grid__img">
+                <img src="img/photos/street/street_porsche_panning.jpg" alt="Panning shot of an orange Porsche Targa" class="grid__img">
+            </div>
+            <div class="grid__col grid__col3">
+                <img src="img/photos/street/street_bari-kiosk.jpg" alt="Street photograph from a Kiosk in Bari" class="grid__img">
+                <img src="img/photos/street/street_bari-boats-docks.jpg" alt="Street photograph of boats on a dock in Bari" class="grid__img">
+                <img src="img/photos/street/street_bari.jpg" alt="Street photograph of a girl in red in Bari" class="grid__img">
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">
+                All rights reserved © 2022 Nicolas Burgeff
+            </p>
+            <a href="privacy-policy.html" class="footer__link">
+                <p class="footer__text">
+                    Privacy Policy
+                </p>
+            </a>
+            <a href="cookies-policy.html" class="footer__link">
+                <p class="footer__text">
+                    Cookies Policy
+                </p>
+            </a>
+            <a href="legal-advice.html" class="footer__link">
+                <p class="footer__text">
+                    Legal Advice
+                </p>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

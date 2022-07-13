@@ -1,0 +1,42 @@
+//Classes ABOUT-page
+.landing
+  height: 30rem
+  background-image: url("../img/photos/portraits/about-mobile.jpg")
+  background-size: cover
+  background-position: center
+  display: flex
+  justify-content: center
+  align-items: center
+  .container
+    max-width: $container__header
+  &__text
+    font-family: $text
+    font-size: $font__size--m
+    text-shadow: $text__shadow
+    color: $color__white2
+
+.me
+  background-color: $color__white2
+  &__text
+    color: $color__red-orange
+    font-family: $text
+    font-size: $font__size--m
+    text-align: center
+
+.intro
+  background-color: $color__blue-teal
+  color: $color__white2
+  padding: 3rem 0
+  &__wrapper
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 1.5rem
+  &__title
+    font-family: $titles
+    font-size: $font__size--l
+  &__text
+    font-family: $text
+    font-size: $font__size--r
+    line-height: 2rem

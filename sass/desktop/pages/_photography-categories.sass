@@ -1,0 +1,20 @@
+//Classes of all the Photo Sections
+.grid
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  gap: 1rem
+  padding: 2rem
+  background-color: $color__white2
+  &__col
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    &1
+      grid-column: 1 / 2
+    &2
+      grid-column: 2 / 3
+    &3
+      grid-column: 3 / 4
+  &__img
+    width: 100%
+    box-shadow: 0 4px  3px black
